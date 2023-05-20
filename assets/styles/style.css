@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh; /*процент от монитора - vh vw*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*___1 страница___***************************************************************/
+
+.section-auth{
+    background-image: url('../imgs/1.webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.blur {
+    background: rgba(12, 12, 12, 0.2);
+    backdrop-filter: blur(3px); 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.section-auth form{
+    display: flex;
+    opacity: 0.8;
+ 	background: black;
+    flex-direction: column;
+    width: 28%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 30px darkkhaki;
+    padding: 20px;
+}
+
+.section-auth form h1{
+    color:darkkhaki;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-shadow: 0 0 2px darkkhaki;
+}
+
+.section-auth form label{
+    font-size: 20px;
+    padding: 10px;
+    color:darkkhaki;
+    text-shadow: 0 0 2px darkkhaki;
+}
+
+.section-auth form input{
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.section-auth form button{
+    transition: 0.75s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: darkkhaki;
+    font-size: 18px;
+    padding: 10px;
+    width: 50%;
+    align-self: center;
+    color:black;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px darkkhaki;
+    cursor:pointer;
+}
+
+.section-auth form button:hover{
+    transition: 0.75s;
+    background-color: darkkhaki;
+    transform: scale(1.05);
+}
+
+/*___2 страница___***************************************************************/
+
+header{
+    background: rgb(167, 71, 71);
+}
+
+.container{
+    width: 1024px;
+    margin: 0 auto; 
+}
+
+.wrapper{
+    flex-wrap: wrap;
+}
+
+.row{
+    display: flex;
+}
+
+header .row{
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .row .logo{
+    width: 8%;
+}
+
+header .row .logo img{
+    width: 100%;
+}
+
+header .row .navigation,
+header .row .navigation ul,
+header .row .navigation ul li a,
+header .row .navigation ul li{
+    height: 61px;
+}
+
+
+header .row .navigation ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header .row .navigation ul a{
+    color:black;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    padding: 0 40px; 
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .row .navigation ul li:hover a{
+    background-color:black;
+    color:white;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.section-welcome{
+    padding: 120px 0;
+    background: linear-gradient(rgba(194, 160, 122, 0.616), rgba(111, 104, 124, 0.658)), url('../imgs/imageee.jpg');
+    background-size: cover;
+}
+
+.section-welcome h1{
+    font-size: 4.5rem;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 100px auto;
+    font-weight: 300;
+}
+
+.section-welcome h3{
+    font-size: 1.5rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 300;
+    margin: 0 auto 100px auto;
+    color:black;
+}
+
+.section-welcome i{
+    transition: 1s;
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    display: flex; /*подстраивается под другие обьекты*/ 
+    justify-content: center;
+    align-items: center;
+}
+
+.section-welcome i:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: red;
+}
+
+.section-welcome i:hover:active{
+    color: rgb(255, 255, 255);
+    border: 2px solid red;
+    background-color: black;
+}
+
+/*--------------*/
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20%;
+}
+
+.script{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.title h3{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.title h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.title .line{
+    height: 2px;
+    width: 10%;
+    background-color: red;
+    margin-bottom: 30px;
+}
+
+.title p{
+    font-size: .8rem;
+    color: black;
+    text-align: center;
+}
+
+.section-service .item{
+    display: flex;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px grey;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.section-service .wrapper .line{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.section-service .text{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    flex-direction: column;
+    font-size: 0.75em;
+}
+
+.section-service .text h3{
+    font-size: 1.5rem;
+}
+
+.section-service .icon{
+    color: black;
+    font-size: 1.5rem;
+}
+
+/*-------------*/
+
+.grey-content{
+    width: 100%;
+    background-color: grey;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.grey-content .item{
+    width: 20%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grey-content .item h3{
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    padding: 5px 0;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.grey-content .item p{
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: column;
+    font-size: .875rem;
+    font-weight: 400;
+    color: white;
+}
+
+/*----------*/
+
+.about{
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.about .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .container .item{
+    width: 32%;
+    height: 200px;
+    background-color: grey;
+    padding: 0;
+    border-radius: 0;
+}
+
+.about .container .item .bg-item{
+    background-image: url('/assets/imgs/fon2.webp');
+    height: 100%;
+    width: 100%;
+}
+
+.about .container .item:hover .bg-item{
+    transition: .5s;
+    transform: translate(-10px, -10px);
+}
+
+.about .container .item .fg-gradient{
+    background: linear-gradient(rgba(194, 160, 122, 0.616), rgba(111, 104, 124, 0.658));
+    height: 100%;
+    opacity: 0;
+}
+
+.about .container .item:hover .fg-gradient{
+    transition: .5s;
+    opacity: 100%;
+}
+
+
+
+/*-----------Подвал------------------*/
+
+.footer .container{
+    max-width: 1024px;
+}
+
+.footer{
+    background: #24262b;
+    padding: 25px 0;
+}
+
+.footer .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 50px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: aqua;
+    margin-bottom: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    background: rgb(91, 204, 38);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: aqua;
+    display: block;
+    transition: all .3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: rgb(91, 204, 38);
+    text-decoration: underline;
+}
+
+.footer-col .social-link a{
+    display:inline-block;
+    height: 40px;
+    width: 40px;
+    background: grey;
+    margin: 0 10px 10 0px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+
+.footer-col .social-link a:hover{
+    color: rgb(255, 255, 255);
+    background: red;
+}
+
+.liner{
+    border-bottom: solid 2px rgb(91, 204, 38);
+    margin-top: 15px;
+    width: 100%;
+}
+
+.podpic h4{
+    font-size: 12px;
+    color: aqua;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+
+
+/*flex-wrap - сохранение размера блока для перехода на след строку*/
+/*justify-content - расстояние между блоками*/
+/*align-items - стартовое позиционирование блоков*/
+/*flex-direction - изменение полярности (колонка, строка)*/
+
+/*autoclose, material icon theme, autocomplete, live-server*/
+/*googlefonts, font-awesome, fontawesome*/
+
